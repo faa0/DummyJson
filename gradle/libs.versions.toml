@@ -1,0 +1,40 @@
+[versions]
+minSdk = "26"
+targetSdk = "36"
+compileSdk = "36"
+
+androidGradlePlugin = "9.1.0-alpha08"
+kotlin = "2.3.10"
+material = "1.5.0-alpha13"
+koin = "4.2.0-RC1"
+retrofit = "3.0.0"
+okhttp = "5.3.2"
+compose = "1.10.2"
+composeActivity = "1.12.3"
+coil = "3.3.0"
+voyager = "1.1.0-beta03"
+
+[libraries]
+material = { group = "androidx.compose.material3", name = "material3", version.ref = "material" }
+
+koin = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }
+
+coil = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
+
+voyager-navigator = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyager" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
